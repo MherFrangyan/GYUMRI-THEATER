@@ -308,5 +308,8 @@
         width: 280px;
         height: 280px;
     }
+    .main_movies .nav-tabs{
+        justify-content: flex-start;
+    }
 }
 

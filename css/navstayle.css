@@ -443,15 +443,8 @@ hr.space-40 {
 .navbar-brand img{
     max-width: 150px ;
 }
-.navbar_scale{
-    transform: scaleY(0);
-    min-height: 0;
-    height: 94px;
-    transform-origin: top top;
-    transition: all .5s;
-}
 .navbar_bg{
-    background:rgba(0, 0, 0, .95);
+    background:rgba(10, 10, 10, .95);
     transition: all .2s;
 }
 .navbar {
@@ -675,17 +668,24 @@ hr.space-40 {
     }
 }
 .date-calendar{
-    border: none;
-    width: 50px;
+    border: none !important;
+    padding: 0px !important;
+    opacity: 0;
 }
-.date-calendar:active,
-.date-calendar:focus{
-    box-shadow: none;
-    border: none;
-    outline:none;
+.main_movies .input-group{
+    width: 40px !important;
+
 }
-.date-calendar::placeholder{
-    display: none !important;
+.input-group-append .btn{
+    background: none !important;
+    color: #000 !important;
+    border: none !important;
+}
+.input-group-append .btn:active,
+.input-group-append .btn:focus{
+    box-shadow: none !important;
+    border: none !important;
+    outline:none !important;
 }
 .main_movies .nav-tabs{
     border-bottom-color: #efefef;
@@ -1070,6 +1070,9 @@ hr.space-40 {
     font-size: 18px;
     font-weight: 600;
     padding: 30px 0;
+}
+.video_block iframe{
+    border:none !important;
 }
 /* new style */
 

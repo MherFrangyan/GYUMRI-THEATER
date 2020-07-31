@@ -1,5 +1,8 @@
 $( document ).ready(function() {
-  // $('.input-group').datepick({format: 'dd/mm/yyyy'}); 
+
+$('#datepicker').datepicker({
+	uiLibrary: 'bootstrap4'
+});
 
   $(window).scroll(function(){
     $('.navbar').toggleClass('navbar_bg', $(this).scrollTop() > 200);
