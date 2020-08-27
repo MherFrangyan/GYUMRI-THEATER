@@ -1198,7 +1198,10 @@ hr.space-40 {
 .presentation-page .footer{
     margin-bottom: -10px;
 }
-
+.presentation-page .carousel-inners iframe{
+    width:100%; 
+    height:450px
+}
 
 
 
