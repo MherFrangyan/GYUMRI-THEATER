@@ -115,6 +115,11 @@
 
     /* navabr */
 
+    /* presentation page */
+    .presentation-carusel.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+        display: none !important;
+    }
+
 }
 @media(max-width:767px){
     .navbar-toggle {
@@ -177,6 +182,24 @@
         padding-bottom: 40px;
     }
     /* new */
+
+    /* presentation page */
+    .about-present{
+        height: 620px;
+    }
+    .about-present .media .movie-type{
+        transform: translateY(0px);
+    }
+    .main_movies .media-title{
+        margin: 10px 0;
+        color: black !important;
+    }
+    .about-present  .media .author{
+        margin-bottom: 2px;
+    }
+    .about-present .media .media-text{
+        margin-top: 10px;
+    }
 }
 
 
