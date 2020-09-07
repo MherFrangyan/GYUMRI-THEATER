@@ -140,7 +140,6 @@ h3 {
 #hero .carousel-inner,
 #hero .carousel-inner .item {
     height: 100%;
-    border: 1px solid red;
     min-height: 600px;
     text-align: center;
     background-color: #000;
@@ -763,6 +762,9 @@ hr.space-40 {
 .main_movies .media-title::after{
     display: none;
 }
+.color_h  .main_movies .media-title{
+    color: black !important;
+}
 .main_movies .movie-type{
     color: #999999;
     font-size: 17px;
@@ -1096,7 +1098,7 @@ hr.space-40 {
     transform: translateY(-5px);
     text-transform: uppercase;
 }
-.main_movies .media-title{
+.presentation-page .main_movies .media-title{
     font-size:25px;
     color: white !important;
 }
