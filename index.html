@@ -50,8 +50,9 @@
 								<span class="hove_height"></span>
 							</a>
 							<ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-								<li><a class="dropdown-item" href="#">ՓՈՔՐ ԹԱՏՐՈՆ</a></li>
-								<li><a class="dropdown-item" href="#">ՎԱՐՉԱԿԱՆ ՄԱՍ</a></li>
+								<li><a class="dropdown-item" href="#">Տարեգրություն</a></li>
+								<li><a class="dropdown-item" href="#">ՎԱՐՉԱԿԱՆ Մաս</a></li>
+								<li><a class="dropdown-item" href="#">Արխիվ</a></li>
 							</ul>
 						</li>
 
@@ -91,7 +92,7 @@
 					<ul class="social_icons">
 						<li class="_line"></li>
 						<li>
-							<a href="#"><i class="fas fa-search"></i></a>
+							<a id="searchBtn"><i class="fas fa-search"></i></a>
 						</li>
 						<li>
 							<a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -102,16 +103,39 @@
 						<li>
 							<a href="#"><i class="fab fa-telegram-plane"></i></a>
 						</li>
+						<li class="search_input"><input type="text" class="form-control" placeholder="Search..."></li>
 					</ul>
+					
 				</div>
+				
 			</div>
+			
 
 		</nav>
-
+		
+			
 		<div id="hero" class="carousel slide carousel-fade" data-ride="carousel">
 			<img src="images/scroll-arrow.svg" alt="Scroll down" class="scroll">
+			<div class="scrollme">
+				<h1 class="baner_title">ԳՅՈՒՄՐՈՒ ԴՐԱՄԱՏԻԿԱԿԱՆ ԹԱՏՐՈՆ</h1>
+			</div>
+			<div class="header_carousel owl-carousel" id="headerCarousel">
 
-			<ol class="carousel-indicators">
+				<div class="carusel_block">
+					<img src="./images/baner.png" alt="Photo">
+				</div>
+
+				<div class="carusel_block">
+					<img src="./images/baner.png" alt="Photo">
+				</div>
+
+				<div class="carusel_block">
+					<img src="./images/baner.png" alt="Photo">
+				</div>
+
+			</div>
+
+			<!-- <ol class="carousel-indicators">
 				<li data-target="#hero" data-slide-to="0"></li>
 				<li data-target="#hero" data-slide-to="1" class="active"></li>
 				<li data-target="#hero" data-slide-to="2"></li>
@@ -121,16 +145,11 @@
 			<div class="carousel-inner">
 				<div class="item active" style="background-image: url(images/baner.png)">
 
-					<div class="container_new">
-						<div class="scrollme" data-when="exit" data-from="0" data-to="1" data-opacity="0"
-							data-translatey="100">
-							<h1 class="baner_title">ԳՅՈՒՄՐՈՒ ԴՐԱՄԱՏԻԿԱԿԱՆ ԹԱՏՐՈՆ</h1>
-						</div>
-					</div>
+					
 				</div>
-				<!-- item 2 -->
+				
 
-			</div>
+			</div> -->
 		</div>
 	</div>
 
@@ -138,7 +157,7 @@
 		<div class="container">
 			<h2 class="block_title carousel_title">ԸՆԹԱՑԻԿ ՆԵՐԿԱՅԱՑՈՒՄՆԵՐ</h2>
 			<span class="title_line"></span>
-			<div class="main_carousel owl-carousel">
+			<div class="main_carousel owl-carousel" id="current_performance">
 
 				<div class="carousel_item">
 					<div class="card" style="width: 18rem;">
@@ -211,8 +230,10 @@
 			<nav>
 				<div class="nav nav-tabs" id="nav-tab" role="tablist">
 
-					<input id="datepicker"  class="date-calendar" type="text">
-						
+					<!-- <input id="datepicker"  class="date-calendar" type="text"> -->
+					<a class="nav-item nav-link" id="nav-cal-tab" data-toggle="tab" href="#nav-cal" role="tab"
+					aria-controls="nav-cal" aria-selected="true"><i class="far fa-calendar-alt"></i></a>
+
 					<a class="nav-item nav-link active" id="nav-tus-tab" data-toggle="tab" href="#nav-tus" role="tab"
 						aria-controls="nav-tus" aria-selected="true">ԵՐՔ</a>
 					<a class="nav-item nav-link" id="nav-wed-tab" data-toggle="tab" href="#nav-wed" role="tab"
@@ -229,6 +250,11 @@
 				</div>
 			</nav>
 			<div class="tab-content" id="nav-tabContent">
+
+				<div class="tab-pane fade" id="nav-cal" role="tabpanel" aria-labelledby="nav-cal-tab">
+					Calendar
+				</div>
+
 				<div class="tab-pane fade show active" id="nav-tus" role="tabpanel" aria-labelledby="nav-tus-tab">
 
 					<div class="media color_h">
@@ -499,13 +525,13 @@
 		</div>
 	</section>
 
-	<section class="about-carousel">
+	<section class="about-carousel" >
 		<div class="container">
 
-			<div class="main_carousel owl-carousel">
+			<div class="main_carousel owl-carousel" id="performances-carusel" >
 
 				<div class="carousel_item">
-					<div class="card" style="width: 18rem;">
+					<div class="card">
 						<img class="card-img-top" src="images/item_img1.png" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Ոչինչ չի մնա</h5>
@@ -515,7 +541,7 @@
 				</div>
 
 				<div class="carousel_item">
-					<div class="card" style="width: 18rem;">
+					<div class="card">
 						<img class="card-img-top" src="images/item_img2.png" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">ՀԱՐՍԱՆԻՔ ԹԻԿՈՒՆՔՈՒՄ</h5>
@@ -525,7 +551,7 @@
 				</div>
 
 				<div class="carousel_item">
-					<div class="card" style="width: 18rem;">
+					<div class="card">
 						<img class="card-img-top" src="images/item_img3.png" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">ՀԱՍՄԻԿ</h5>
@@ -535,7 +561,7 @@
 				</div>
 
 				<div class="carousel_item">
-					<div class="card" style="width: 18rem;">
+					<div class="card">
 						<img class="card-img-top" src="images/item_img4.png" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">ԵՐԿՆԱԳՈՒՅՆ ՇԱՆ ԱՉՔՈՐԸ</h5>
@@ -545,7 +571,7 @@
 				</div>
 
 				<div class="carousel_item">
-					<div class="card" style="width: 18rem;">
+					<div class="card">
 						<img class="card-img-top" src="images/item_img1.png" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Ոչինչ չի մնա</h5>
@@ -555,7 +581,7 @@
 				</div>
 
 				<div class="carousel_item">
-					<div class="card" style="width: 18rem;">
+					<div class="card">
 						<img class="card-img-top" src="images/item_img1.png" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Ոչինչ չի մնա</h5>
@@ -627,7 +653,7 @@
 			<p>2020 GYUMRITHEATRE</p>
 		</div>
 
-		</div>
+	</div>
 
 	<!-- <script src="js/jquery-2.2.4.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script> -->

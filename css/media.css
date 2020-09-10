@@ -26,6 +26,9 @@
     .nav{
         border-bottom: none;
     }
+    .about-carousel .main_carousel .card{
+        width: 18rem;
+    }
 } 
 @media(max-width:991px){
     .logo {
@@ -67,6 +70,11 @@
         transform: translate(0px,0px);
         border-radius: 0px;    
     }
+    .social_icons .search_input{
+        top: 55px;
+        transform: translate(50%,0px);
+        right: 50%;
+    }
     .hove_height{
         left: 0px;
     }
@@ -76,7 +84,7 @@
     .social_icons ._line{
         display: none;
     }
-    .container_new .baner_title{
+    .scrollme .baner_title{
         transform: translateY(0px);
     }
     .main_carousel .owl-nav .owl-prev{
@@ -112,13 +120,20 @@
     .video_block iframe{
         width: 295px;
     }
-
+    /* #hero {
+        height: 400px
+    } */
     /* navabr */
 
-    /* presentation page */
-    .presentation-carusel.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+    /* performances page */
+    .performances-carusel.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
         display: none !important;
     }
+    .navbar-collapse{
+        height: 320px;
+    }
+
+    
 
 }
 @media(max-width:767px){
@@ -183,7 +198,7 @@
     }
     /* new */
 
-    /* presentation page */
+    /* performances page */
     .about-present{
         height: 620px;
     }
@@ -200,16 +215,38 @@
     .about-present .media .media-text{
         margin-top: 10px;
     }
+    .performances-page .main_movies .media-title{
+        color: black !important;
+    }
+    /* #headerCarousel {
+        height: 300px;
+    } */
+    
+    .scrollme .baner_title  {
+        font-size:28px;
+        letter-spacing: 3px;
+    }
+    #headerCarousel .owl-dots .owl-dot{
+        width: 10px ;
+        height: 10px ;
+    }
+    #headerCarousel .owl-dots{
+        width: 20px;
+        position: absolute;
+        z-index: 500;
+        right: 50px;
+        bottom: 90px; 
+    }
+
 }
 
 
 @media(max-width:576px){
-    .container_new .baner_title {
+    .scrollme .baner_title {
         font-size: 25px;
-        transform: translateY(-40px);
     }
     .navbar-brand img{
-        max-width: 110px;
+        max-width: 80px;
     }
     .navbar{
         padding-left: 0px !important;
@@ -217,6 +254,11 @@
     }
     .main_movies .media-text{
         font-size: 13px;
+    }
+
+    .navbar-toggler-icon{
+        width: 30px !important;
+        height: 1rem;
     }
     .main_movies .movie-type{
         font-size: 14px;
@@ -288,21 +330,30 @@
         letter-spacing: 1px;
         font-size: 16px;
     }
+    .performance_header{
+        height:200px;
+    }
+    .scrollme .baner_title{
+        font-size: 20px;
+    }
+    #headerCarousel .owl-dots{
+        right: 10px;
+        bottom: 30px;
+    }
 
 }
 @media(max-width:480px){
-    .container .baner_title{
-        font-size: 25px;
+    .scrollme .baner_title{
+        font-size: 16px;
     }
     .navbar-header .logo img{
-        max-width: 120px;
+        max-width: 100px;
         margin-left: 15px;
     }
     .carousel-indicators li,
     .carousel-indicators li.active {
         width: 10px;
         height: 10px;
-        
     }
     .main_movies .nav-tabs{
         margin-bottom: 30px;
@@ -334,5 +385,19 @@
     .main_movies .nav-tabs{
         justify-content: flex-start;
     }
+    .performance_header .btn_play a{
+        width: 40px;
+        height: 40px;
+        right: 5vw;
+        bottom: 32px;
+        padding: 6px 8px 20px 10px;
+    
+    }
+    .header_carousel.owl-carousel .owl-item img{
+        height: 220px;
+    }
+
+
+
 }
 
