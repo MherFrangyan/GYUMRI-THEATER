@@ -437,8 +437,8 @@ hr.space-40 {
 /* new style */
 
 /* header Carousel */
-h1,h2,h3,h4,h5,h6,p,a,span,button{
-    font-family: "Arm Hmks";
+h1,h2,h3,h4,h5,h6,p,a,span,button,small{
+    font-family: "ArialAMU";
 } 
 #headerCarousel{
     max-height: 500px;
@@ -460,6 +460,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
     border-radius: 50%;
     border: none;
     background: #6a7377;
+}
+#headerCarousel .owl-dots .owl-dot:focus{
+    outline:none;
 }
 #headerCarousel .owl-dots .owl-dot.active{
     background: #e18848;
@@ -544,10 +547,12 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
     border-bottom: 1px solid #5f6769;
     justify-content: flex-end;
 }
-.navbar-collapse a{
+/* .navbar-collapse a{
     letter-spacing: 2px;
-}
+} */
 .navbar-nav .nav-item a{
+    font-family: "Arm Hmks";
+    letter-spacing: 1.5px;
     color: white;
     font-size: 16px;
     margin-right: 10px;
@@ -671,7 +676,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
 /* section 2 carousel */
 
 .carousel_title{
-    font-size: 40px;
+    font-family: "Arm Hmks";
+    font-size: 34px;
+    letter-spacing: 3px;
     text-align: center;
     max-width: 600px;
     margin: 40px auto 0px;
@@ -694,9 +701,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
 }
 .carousel_item .card-title{
     border: none;
+    font-family: "Arm Hmks";
     letter-spacing: 1.5px;
     padding-bottom: 0px;
-    min-height: 55px;
     max-height: 100px;
     font-weight: 700;
     text-align: center;
@@ -708,7 +715,6 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
 }
 .carousel_item .card-text{
     text-align: center;
-    letter-spacing: 1.5px;
     color: #999;
     font-weight: 700;
     text-transform: uppercase;
@@ -804,7 +810,6 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
     color: #e18848;
     font-weight: 700;
     font-size: 17px;
-    letter-spacing: 1px;
     text-transform: uppercase;
 }
 .main_movies .tab-content hr{
@@ -813,6 +818,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
 }
 .main_movies .media img{
     max-width: 180px;
+    max-height: 247px;
 
 }
 .main_movies .media-body{
@@ -838,11 +844,14 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
     background: #dedede !important;
 }
 .main_movies .media-title{
+    font-family: "Arm Hmks";
+    font-weight: 600;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     border-bottom: 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    font-size: 24px;
+    font-size: 30px;
 
 }
 .main_movies .media-title::after{
@@ -869,12 +878,10 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
 }
 .main_movies .media-footer .view-movie{
     margin-bottom: 0px;
-    letter-spacing: 1.5px;
 }
 .media-footer .media_btn-group .btn{
     font-size: 12px;
     width: 100px;
-    letter-spacing: 1px;
 }
 .media-footer .media_btn-group .more_btn{
     border-radius: 50px !important;
@@ -916,12 +923,10 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
 .media-footer .movie-lenght{
     text-transform: uppercase;
     color: #999;
-    letter-spacing: 1px;
     font-weight: 600;
 }
 .media-footer .movie-lenght span{
     color: white;
-    letter-spacing: 1px;
     background: #2b2b2b;
     display: inline-block;
     border-radius: 50%;
@@ -930,7 +935,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
     text-align: center;
     margin-left: 15px;
     box-sizing: border-box;
-    padding:7px 3px 0px 7px;
+    padding:8px 3px 0px 7px;
 }
 @media(max-width:520px){
     
@@ -996,7 +1001,6 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
     color: #e18848;
     font-weight: 700;
     font-size: 20px;
-    letter-spacing: 1px;
     text-transform: uppercase;
 }
 .new_section .media-title{
@@ -1108,7 +1112,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
     text-transform: uppercase;
     color: #5b5b5b;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
     font-size: 26px;
     font-weight: 700;
 
@@ -1119,6 +1123,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
     background: #101010;
 }
 .footer .footer-block_title{
+    font-family: "Arm Hmks";
     color: #ad6437;
     font-size: 18px;
     letter-spacing: 2px;
@@ -1130,7 +1135,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,button{
     padding-left: 0px;
 }
 .footer .footer-block_list li a{
+    font-family: "Arm Hmks";
     letter-spacing: 1.5px;
+    font-weight: 200 !important;
     color: #b9b9b9;
     font-size: 14px;
     font-weight: 600;
