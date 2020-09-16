@@ -80,6 +80,11 @@ $('#headerCarousel').owlCarousel({
   
 });
 
+$('.actros_imges').magnificPopup({
+  type: 'image',
+  delegate:'a'
+});
+
 $('.popup_youtube').magnificPopup({
   disableOn: 700,
   type: 'iframe',
@@ -87,14 +92,12 @@ $('.popup_youtube').magnificPopup({
 
 });
 
+
+
 $('.performances-carusel').magnificPopup({
     type: 'image',
     delegate:'a'
   });
 
- 
-  
 
-
-
-  });
+});

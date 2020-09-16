@@ -17,7 +17,7 @@
 
 html,
 body {
-    font-family: roboto condensed, sans-serif;
+    font-family: "sans-serif";
     font-size: 16px;
     height: 100%;
     color: #717171;
@@ -202,7 +202,6 @@ blockquote {
 }
 
 blockquote:before {
-    font-family: material icons;
     font-size: 24px;
     font-size: 50px;
     font-style: normal;
@@ -232,9 +231,7 @@ blockquote:before {
 input:focus,
 input:active,
 textarea:focus,
-textarea:active,
-select:focus,
-select:active {
+textarea:active {
     border-color: #fbbd61;
     box-shadow: 0 0 15px rgba(251, 189, 97, .4)
 }
@@ -518,7 +515,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
 
 /* navbar */
 
-
+.navbar-pages{
+    background: #000;
+}
 .navbar-brand img{
     max-width: 150px ;
 }
@@ -614,6 +613,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
     
     transform: translate(-30px,0px);
 }
+
 .social_icons {
     position: relative;
 }
@@ -642,6 +642,19 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
     display: inline-block;
     width: 40px;
     border: 1px solid  #5f6769;
+}
+.language_select{
+    font-size: 18px;
+    color: #E18848;
+    background: none;
+    border: none;
+}
+.language_select:active{
+    background: none;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) !important;
+}
+.language_select option{
+    background:rgba(0, 0, 0, .004);
 }
 
 
@@ -674,7 +687,10 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
 
 
 /* section 2 carousel */
-
+.main_carousel .carousel_item{
+    max-width: 250px;
+    margin: auto;
+}
 .carousel_title{
     font-family: "Arm Hmks";
     font-size: 34px;
@@ -1061,11 +1077,14 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
     background: #101010;
 }
 
+.about-carousel  a:hover{
+    text-decoration: none ;
+}
 .about-carousel .main_carousel .card{
     background: #101010;
     width: 14rem;
-    margin: initial;
 }
+
 .about-carousel .main_carousel .card-img-top{
     max-width: 150px;
 }
@@ -1223,10 +1242,10 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
     text-transform: uppercase;
 }
 .performances-page .main_movies .media-title{
-    font-size:25px;
+    font-size:32px;
     color: white !important;
 }
-.about-present  .media .author{
+.about-present .media .author{
     margin-bottom: -8px;
     font-size:14px;
 }
@@ -1329,7 +1348,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
     transform: translateY(20px);
     box-shadow: none;
 }
-.performances-page .foote-and-carusel{
+.foote-and-carusel{
     border: 1px solid #1f1f1f;
 }
 .performances-page .article-call{
@@ -1343,7 +1362,197 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
     height:450px
 }
 
+/* actros page */
 
+.actors_page{
+    margin-top: 150px;
+}
+.about_actros{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.about_actros .social_page_act svg{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 10px;
+
+    transition: .5s;
+}
+.about_actros .social_page_act svg:hover{
+    color: #F7AB55;
+}
+
+.about_act_title .actros_name{
+    font-family: 'Arm Hmks';
+    font-size: 50px;
+    height: 60px;
+    overflow: hidden;
+    border: none;
+}
+.about_act_title .actros_name::after{
+    display: none;
+}
+.about_act_title .actros_type{
+    font-family: 'Arm Hmks';
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color:#F7AB55 ;
+    display: block;
+    transform: translateY(10px);
+}
+.actros_about_text{
+    text-align: justify;
+    max-height: 265px;
+    overflow: hidden;
+}
+.actros_imges{
+    justify-content: flex-start;
+    display: flex;
+    margin: 30px 0px;
+}
+.actros_imges .act_img {
+    margin-right: 25px;
+    max-width: 132px;
+    height: 132px;
+}
+.actors_photo{
+    max-height: 350px;
+    width: 255px;
+}
+.media_present{
+    background: white;
+    max-width: 350px;
+    overflow: hidden;
+    max-height: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 6px 11px 0px rgba(168,168,168,1);
+}
+.media_present:hover{
+    background: linear-gradient(to right, #fbbd61, #ec7532) ;
+}
+.media_present:hover .author,.media_present:hover .movie_type{
+    color: white;
+}
+.performance_movie{
+    margin: 20px 0;
+}
+.performance_movie .author{
+    margin-top: 5px;
+    display: block;
+    color: #e18848;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-family:'Arm Hmks';
+    height: 25px;
+    text-transform: uppercase;
+    overflow-y: hidden;
+}
+.performance_movie .performance_name{
+    font-family:'Arm Hmks';
+    font-size: 26px;
+    border: none;
+    height: 25px;
+    overflow-y: hidden;
+}
+.performance_movie .present_baner{
+    max-width: 63px;
+    max-height: 84px;
+    border-radius: 10px;
+}
+.performance_movie .performance_name::after{
+    display: none;
+    
+}
+.performance_movie .movie_type{
+    color:#ccc;
+    font-weight:700 ;
+    display: block;
+    font-size: 16px;
+}  
+.actors_lists{
+    margin-bottom: 60px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+.actors_lists  a:hover{
+    text-decoration:none !important;
+}
+.actors_lists a:hover .actor{
+    background: linear-gradient(to right, #fbbd61, #ec7532) ;
+}
+.actors_lists a:hover .actor_type{
+    color: white;
+}
+.actors_lists .actor{
+    margin-top: 30px;
+    max-width: 230px;
+    box-shadow: 0px 6px 11px 0px rgba(168,168,168,1);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.actors_lists .actor img{
+    width: 180px;
+    margin: auto;
+    display: block;
+    height: 240px;
+}
+.actors_lists .actor_name{
+    font-family:'Arm Hmks';
+    border: none;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    margin-top: 5px;
+    color: black;
+}
+.actors_lists .actor_type{
+    font-family:"ArialAMU";
+    color: #F7AB55;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+
+}
+
+.actros_list_pag {
+    margin: 20px auto;
+    max-width: 200px;
+}
+
+.actros_list_pag .page-link{
+    border: none;
+    font-size: 20px;
+    color: #999999;
+    font-weight: 600;
+}
+.actros_list_pag .active .page-link{
+    color: #e18848 !important;
+    background: none !important;
+
+    transition: color .5s;
+}
+.actros_list_pag .page-link:hover{
+    background: none ;
+    color: #e18848;
+}
+.actros_list_pag span svg{
+     font-size: 13px;
+     color: #e18848;
+
+     transition: color .5s;
+}
+.actros_list_pag span:hover svg{
+    color: #999999;
+}
 
 
 
