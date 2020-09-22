@@ -619,8 +619,8 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
 }
 .social_icons .search_input{
     position: absolute;
-    right: 0;
-    top: 58px;
+    right: 33px;
+    top: 46px;
     max-width: 155px;
     display: none;
 }
@@ -1251,7 +1251,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
 }
 .about-present .media .media-text{
     margin-top: 30px;
-    max-height: 195px;
+    max-height: 193px;
     overflow: hidden;
 }
 .about-present .media img{
@@ -1562,6 +1562,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
 .about_pages .main_movies .media-title {
     font-size: 46px;
     letter-spacing: 4px;
+    
 }
 .about_pages .about-present .media .media-text{
     min-height: 175px;
@@ -1593,6 +1594,10 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
     box-shadow: inset 0px -220px 115px 106px rgba(0,0,0,0.95) !important;
 
 } */
+.about_pages .new_section .media-title{
+    font-family: "Arm Hmks";
+    font-size: 70px;
+}
 .opacity_baner{
     padding-bottom: 80px;
     background: rgba(0, 0, 0, .7);
@@ -1601,7 +1606,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
 .about_pages .new_section{
     padding-bottom: 0px;
 }
+
 .theater_year{
+    border: none;
     font-size: 80px;
     text-transform: uppercase;
     text-align: center;
@@ -1612,6 +1619,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
 .theater_year span{
     color: #e18848;
 }
+
 
 
 
