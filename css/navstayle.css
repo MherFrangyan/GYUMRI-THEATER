@@ -1554,7 +1554,64 @@ h1,h2,h3,h4,h5,h6,p,a,span,button,small{
     color: #999999;
 }
 
+.about_pages .performance_header{
+    background-size: cover !important;
+    background: url('../images/about_baner.png') no-repeat center;
+}
 
+.about_pages .main_movies .media-title {
+    font-size: 46px;
+    letter-spacing: 4px;
+}
+.about_pages .about-present .media .media-text{
+    min-height: 175px;
+    text-align: justify;
+    text-indent: 20px;
+   
+}
+.about_pages .text_director{
+    font-size: 15px;
+    text-indent: 20px;
+    text-align: justify;
+    max-width: 1035px;
+    min-height: 100px;
+    max-height: 250px ;
+    overflow: hidden;
+}
+.about_pages .new_section{
+    background-image: url('../images/about_main_baner.png');
+    background-position:1px;
+    box-shadow: inset 0px -155px 55px -24px rgba(0,0,0,0.95) !important;
+
+}
+.about_pages .new_section{
+    margin-top: 40px;
+}
+/* .performances-page .new_section{
+    background-image: url('../images/baner_newsection.png');
+    background-position:1px;
+    box-shadow: inset 0px -220px 115px 106px rgba(0,0,0,0.95) !important;
+
+} */
+.opacity_baner{
+    padding-bottom: 80px;
+    background: rgba(0, 0, 0, .7);
+    min-height: 600px;
+}
+.about_pages .new_section{
+    padding-bottom: 0px;
+}
+.theater_year{
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 6px;
+    font-family: "Arm Hmks";
+}
+.theater_year span{
+    color: #e18848;
+}
 
 
 
