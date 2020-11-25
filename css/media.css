@@ -252,6 +252,29 @@
         letter-spacing: 2px;
         font-size: 45px;
     }
+
+    /* archive page */
+    .archive_page .archive_header_title{
+        font-size: 60px;
+    }
+    .archive_page .archive_header_text{
+        font-size: 25px;
+    }
+    .archive_page .archive_header{
+        min-height: 400px;
+        max-height: 395px;
+    }
+    .archive_line{
+        margin-top: 20px;
+    }
+    .archive_page .archive_page_carousel_title{
+        font-size: 20px;
+        
+    }
+    .archive_main_content .archive_main_title{
+        font-size: 35px;
+
+    }
 }
 
 
@@ -366,6 +389,20 @@
     .theater_year{
         letter-spacing: 2px;
         font-size: 35px;
+    }
+     /* archive page */
+     .archive_page .archive_header_title{
+        font-size: 50px;
+    }
+    .archive_page .archive_header_text{
+        font-size: 20px;
+    }
+    .archive_page .archive_header{
+        min-height: 350px;
+        max-height: 395px;
+    }
+    .archive_line{
+        margin-top: 0px;
     }
 
 }

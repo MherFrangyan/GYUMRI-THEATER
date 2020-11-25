@@ -37,6 +37,34 @@ $('#current_performance').owlCarousel({
 
 });
 
+$('#current_performance_slide').owlCarousel({
+  loop:true,
+  margin:10,
+  responsiveClass:true,
+  nav: true,
+       navText: [ `<i class="fas fa-chevron-left"></i>`, `<i class="fas fa-chevron-right"></i>`],
+  responsive:{
+      0:{
+          items:1,
+          nav:false,
+      },
+      700:{
+        items:2,
+          nav:false,
+      },
+      1000:{
+          items:3,
+          nav:true,
+      },
+      1200:{
+        items:4,
+        nav:true,
+        margin:0, 
+      }
+  }
+});
+
+
 $('#performances-carusel').owlCarousel({
   loop:true,
   margin:0,
@@ -99,5 +127,34 @@ $('.performances-carusel').magnificPopup({
     delegate:'a'
   });
 
+
+});
+
+
+$('#season_carousel').owlCarousel({
+  loop:true,
+  margin:5,
+  responsiveClass:true,
+  nav: true,
+       navText: [ `<i class="fas fa-chevron-left"></i>`, `<i class="fas fa-chevron-right"></i>`],
+  responsive:{
+      0:{
+          items:3,
+          nav:false,
+      },
+      700:{
+        items:3,
+          nav:false,
+      },
+      1000:{
+          items:4,
+          nav:true,
+      },
+      1200:{
+        items:6,
+        nav:true,
+        margin:0, 
+      }
+  }
 
 });
